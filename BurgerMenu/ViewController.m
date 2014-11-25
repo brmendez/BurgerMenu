@@ -10,13 +10,20 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) UIViewController *greenVC;
+@property (strong, nonatomic) UIViewController *currentVC;
+@property (retain, nonatomic) IBOutlet UIButton *burgerButton;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.greenVC = [[self.storyboard instantiateViewControllerWithIdentifier:@"GREEN_VC"] autorelease];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,6 +14,7 @@
 		451BA31D1A23DE0D003539D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451BA31C1A23DE0D003539D1 /* Images.xcassets */; };
 		451BA3201A23DE0D003539D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451BA31E1A23DE0D003539D1 /* LaunchScreen.xib */; };
 		451BA32C1A23DE0D003539D1 /* BurgerMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 451BA32B1A23DE0D003539D1 /* BurgerMenuTests.m */; };
+		451BA3361A23DE8A003539D1 /* burgerMenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 451BA3351A23DE8A003539D1 /* burgerMenuIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		451BA3251A23DE0D003539D1 /* BurgerMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgerMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451BA32A1A23DE0D003539D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451BA32B1A23DE0D003539D1 /* BurgerMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurgerMenuTests.m; sourceTree = "<group>"; };
+		451BA3351A23DE8A003539D1 /* burgerMenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerMenuIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		451BA30F1A23DE0D003539D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				451BA3351A23DE8A003539D1 /* burgerMenuIcon.png */,
 				451BA3101A23DE0D003539D1 /* Info.plist */,
 				451BA3111A23DE0D003539D1 /* main.m */,
 			);
@@ -201,6 +204,7 @@
 			files = (
 				451BA31B1A23DE0D003539D1 /* Main.storyboard in Resources */,
 				451BA3201A23DE0D003539D1 /* LaunchScreen.xib in Resources */,
+				451BA3361A23DE8A003539D1 /* burgerMenuIcon.png in Resources */,
 				451BA31D1A23DE0D003539D1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = BurgerMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = BurgerMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +420,7 @@
 				451BA3311A23DE0D003539D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		451BA3321A23DE0D003539D1 /* Build configuration list for PBXNativeTarget "BurgerMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				451BA3341A23DE0D003539D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
