@@ -14,6 +14,8 @@
 @property (strong, nonatomic) UIViewController *currentVC;
 @property (retain, nonatomic) IBOutlet UIButton *burgerButton;
 
+@property (retain, nonatomic) NSString *myString;
+
 @end
 
 @implementation ViewController
@@ -22,6 +24,11 @@
     [super viewDidLoad];
     
     self.greenVC = [[self.storyboard instantiateViewControllerWithIdentifier:@"GREEN_VC"] autorelease];
+    
+    self.myString = [NSString stringWithFormat:@"Brian"];
+    
+    [self addChildViewController:self.greenVC];
+    self.greenVC.view.frame = self.view.frame;
     
     
 }
