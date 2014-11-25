@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) UIViewController *greenVC;
 @property (strong, nonatomic) UIViewController *currentVC;
-@property (retain, nonatomic) IBOutlet UIButton *burgerButton;
+@property (assign, nonatomic) IBOutlet UIButton *burgerButton;
 
 @property (retain, nonatomic) NSString *myString;
 
@@ -29,8 +29,28 @@
     
     [self addChildViewController:self.greenVC];
     self.greenVC.view.frame = self.view.frame;
+//    [self.view addSubview:self.greenVC.view];
+    [self.view insertSubview:self.greenVC.view belowSubview:self.burgerButton];
+    [self.greenVC didMoveToParentViewController:self];
+
+}
+
+
+- (IBAction)didPressBurger:(id)sender {
+    NSLog(@" %@", self.myString);
     
-    
+    [UIView animateWithDuration:0.4 animations:^{
+        self.greenVC.view.frame = CGRectMake(self.view.frame.size.width * .8, 0, self.view.frame.size.width, self.view.frame.size.height);
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+-(void)dealloc {
+    [_greenVC release];
+    [_currentVC release];
+    [_myString release];
+    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning {
